@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {Routes, Route} from "react-router-dom";
+
+//Pages
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Shop from "./Pages/Shop";
+import Contact from "./Pages/Contact";
+import TouristHub from "./Pages/TouristHub";
+import WorkWithUs from "./Pages/Workwithus";
+import PageNotFound from "./Pages/Pagenotfound";
+import Donation from "./Pages/Donation";
+
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+//Components
+import Navbar from "./Components/navbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <span className=""><Navbar /></span>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="about" element={<About />}/>
+          <Route path="contact" element={<Contact />}/>
+          <Route path="shop" element={<Shop />}/>
+          <Route path="tourist-hub" element={<TouristHub />}/>
+          <Route path="work-with-us" element={<WorkWithUs />}/>
+          <Route path="donation" element={<Donation />}/>
+          <Route path="*" element={<PageNotFound />}/>
+        </Routes>
+      </div>
+    </>
   );
 }
 
