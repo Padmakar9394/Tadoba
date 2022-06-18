@@ -7,7 +7,7 @@ import { FiSearch } from "react-icons/fi";
 const NavLg = () => {
   return (
     <>
-      <section className="bg-[#2B7444]">
+      <section className="fixed w-full z-50 top-0 bg-[#2B7444]">
       <div className="flex items-center mx-8">
         <div className="flex items-center gap-2">
           <div className="w-28 h-36">

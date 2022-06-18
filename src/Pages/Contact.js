@@ -5,9 +5,9 @@ import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet'
 const Contact = () => {
   return (
     <>
-      <div className="md:mx-20 px-6 md:px-0">
+      <div className="md:mx-20 md:mt-44 px-6 md:px-0">
         <h1 className="text-2xl uppercase font-bold mt-20 mb-8">Contact Us</h1>
-        <div className="flex justify-between items-center">
+        <div className="md:flex md:justify-between md:items-center">
           <div className="drop-shadow-xl bg-white py-3 px-4 rounded-lg">
             <h1 className="my-2 text-lg font-['Open_Sans'] font-medium">TADOBA-ANDHARI TIGER RESERVE</h1>
             <h3 className="font-medium my-1">Mul Road, Chandrapur – 442401</h3>
@@ -20,7 +20,7 @@ const Contact = () => {
               <h2 className="text-lg px-1 font-['Open_Sans']">WhatsApp Us</h2>
             </button>
           </div>
-          <aside style={{height : "fit-content"}} className="hidden md:block md:w-6/12 sticky bg-white p-3 shadow-md rounded-xl">
+          <aside style={{height : "fit-content"}} className="md:w-6/12 sticky bg-white p-3 shadow-md rounded-xl">
               <h1 className="text-lg font-bold font-medium">TADOBA-ANDHARI TIGER RESERVE</h1>
               <h5 className="font-semibold">Map</h5>
               <div className="w-full h-72">
@@ -38,7 +38,9 @@ const Contact = () => {
               </div>
           </aside>
         </div>
-
+        <div className="mt-16">
+          <hr className="bg-cyan-500" />
+        </div>
         <form className="my-16 flex flex-col">
           <div className="md:flex md:items-center md:gap-12 md:my-4">
             <div className="flex flex-col gap-2 md:w-2/5">
