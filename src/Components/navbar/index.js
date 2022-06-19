@@ -135,11 +135,13 @@ const NavSm = () => {
 const Navbar = () => {
   return (
     <>
-      <div className="md:hidden">
-        <NavSm />
-      </div>
-      <div className="hidden lg:block">
-        <NavLg />
+      <div>
+        <div className="md:hidden">
+          <NavSm />
+        </div>
+        <div className="hidden lg:block">
+          <NavLg />
+        </div>
       </div>
     </>
   )
