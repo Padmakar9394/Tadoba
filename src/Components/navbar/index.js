@@ -8,22 +8,22 @@ const NavLg = () => {
   return (
     <>
       <section className="fixed w-full z-50 top-0 bg-[#2B7444]">
-      <div className="flex items-center mx-8">
+      <div className="flex items-center mx-24">
         <div className="flex items-center gap-2">
-          <div className="w-28 h-36">
+          <div className="h-28">
             <img src="https://cracku.in/latest-govt-jobs/wp-content/uploads/2019/08/Maharashtra-Forest-Department-Logo.jpg"
                  alt="logo"
                  className="w-full h-full object-cover"
             />
           </div>
-          <div className="w-48 h-36">
+          <div className="w-36 h-28">
             <img src="https://mytadoba.org/wp-content/uploads/2022/02/tatr-logo.png"
                  alt="name logo"
                  className="w-full h-full object-cover"
             />
           </div>
         </div>
-        <div className="flex items-center ml-16 gap-6 ">
+        <div className="flex items-center ml-12 gap-4">
           <NavLink to="/about">
             <div className="flex items-center mx-2 text-white hover:text-yellow-400">
               <h2 className="text-sm font-semibold uppercase mx-2 ">About Us</h2>
@@ -46,8 +46,8 @@ const NavLg = () => {
               <h2 className="text-sm font-semibold uppercase mx-2 text-white hover:text-yellow-400">Shop</h2>
           </NavLink>
           <NavLink to="/donation">
-              <div className="bg-orange-400 h-36 py-14">
-                <h2 className="text-lg hover:text-white font-semibold uppercase mx-2">Make A Donation</h2>
+              <div className="bg-orange-400 h-28 py-10">
+                <h2 className="text-sm hover:text-white font-semibold uppercase px-4">Make A Donation</h2>
               </div>
           </NavLink>
         </div>
