@@ -82,7 +82,8 @@ const WildLifeGallerySliderInscets = () => {
             onClose={closeImageViewer}
             disableScroll={false}
             backgroundStyle={{
-              backgroundColor: "rgba(0,0,0,0.9)"
+              backgroundColor: "rgba(0,0,0,0.9)",
+              zIndex: 50
             }}
             closeOnClickOutside={true}
           />

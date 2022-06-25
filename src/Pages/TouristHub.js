@@ -25,14 +25,14 @@ const TouristHub = () => {
               </div>
             </div>
             <div className="absolute top-64 w-full">
-              <div className="relative  my-16">
-              <div className="w-full h-[450px] transition ease-in-out delay-150 hover:scale-110  duration-300">
+              <div className="relative  my-16  transform transition duration-700 hover:scale-105">
+              <div className="relative w-full h-[450px]">
                 <img src="https://images.unsplash.com/photo-1445711005973-54fe2a103826?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NjR8ODk3NjkxOXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
                      className="w-full h-full object-cover"
                      alt="bg-img"
                 />
               </div>
-              <span className="absolute top-0 px-32 text-white overflow-hidden">
+              <span className="absolute top-0 px-32 text-white">
                 <div className="flex items-center gap-12 px-4 pt-20">
                   <div className="flex flex-col gap-4 w-1/2">
                     <h1 className="font-bold text-xl">GETTING TO TATR</h1>
@@ -127,42 +127,41 @@ const TouristHub = () => {
               </span>
               </div>
             </div>
-            <div className="absolute top-96 mt-96 w-full px-44">
-              <div className="flex items-center gap-8 mt-20">
-                <div className="relative w-72 h-64 my-8">
+            <div className="absolute top-96 mt-96 w-full px-28">
+              <div className="flex items-center gap-4 mt-20">
+                <div className="relative w-[400px] h-64 my-8">
                   <img src="https://mytadoba.org/wp-content/uploads/2022/02/tourist-safari-calltoaction.jpg"
                           alt="bg-card-img"
                           className="absolute w-full h-full object-cover"
                   />
-                  <span className="absolute inset-0 bg-gray-900 bg-opacity-50"></span>
-                  <span className="relative h-full w-full text-white py-8 px-4 flex flex-col items-center gap-3">
+                  <span className="absolute"></span>
+                  <span className="relative  hover:bg-black h-full w-full text-white py-8 px-4 flex flex-col items-center gap-3 transform transition duration-700 hover:scale-105">
                     <h2 className="font-bold text-xl">WILDLIFE SAFARIS</h2>
-                    <p className="text-center">To know about safari bookings, timings, fees, rules and regulations, refunds and cancellations etc</p>
-                    <button className="px-3 py-2 hover:bg-orange-500 hover:text-gray-900 text-center border-2 rounded-lg uppercase font-bold text-xl">Click Here</button>
+                    <p className="px-4 text-center">To know about safari bookings, timings, fees, rules and regulations, refunds and cancellations etc</p>
+                    <button className="mt-4 px-3 py-2 hover:bg-orange-500 hover:text-gray-900 text-center border-2 rounded-lg uppercase font-bold text-xl">Click Here</button>
                   </span>
                 </div>
-                <div className="relative w-72 h-64 my-8">
+                <div className="relative w-[400px] h-64 my-8">
                   <img src="https://mytadoba.org/wp-content/uploads/2022/02/tourist-activities-calltoaction.jpg"
                           alt="bg-card-img"
                           className="absolute w-full h-full object-cover"
                   />
-                  <span className="absolute inset-0 bg-gray-900 bg-opacity-50"></span>
-                  <span className="relative h-full w-full text-white py-8 px-4 flex flex-col items-center gap-3">
+                  <span className="absolute"></span>
+                  <span className="relative hover:bg-black h-full w-full text-white py-8 px-4 flex flex-col items-center gap-3 transform transition duration-700 hover:scale-105">
                     <h2 className="font-bold text-xl">OTHER ADVENTURES</h2>
-                    <p className="text-center">To know about booking other activities such as boating, kayaking, birding machans, cycling etc</p>
-                    <button className="px-3 py-2 hover:bg-orange-500 hover:text-gray-900  text-center border-2 rounded-lg uppercase font-bold text-xl">Click Here</button>
+                    <p className="px-4 text-center">To know about booking other activities such as boating, kayaking, birding machans, cycling etc</p>
+                    <button className="mt-4 px-3 py-2 hover:bg-orange-500 hover:text-gray-900  text-center border-2 rounded-lg uppercase font-bold text-xl">Click Here</button>
                   </span>
                 </div>
-                <div className="relative w-72 h-64 my-8">
+                <div className="relative w-[400px] h-64 my-8">
                   <img src="https://mytadoba.org/wp-content/uploads/2022/02/tourist-resorts-calltoaction.jpg"
                           alt="bg-card-img"
                           className="absolute w-full h-full object-cover"
                   />
-                  <span className="absolute inset-0 bg-gray-900 bg-opacity-50"></span>
-                  <span className="relative h-full w-full text-white py-8 px-4 flex flex-col items-center gap-3">
+                  <span className="relative hover:bg-black h-full w-full text-white py-8 px-4 flex flex-col items-center gap-3 transform transition duration-700 hover:scale-105">
                     <h2 className="font-bold text-xl">RESORTS / HOMESTAYS</h2>
-                    <p className="text-center">To know about greenlisted, conservation-compliant resorts and homestays</p>
-                    <button className="px-3 py-2 hover:bg-orange-500 hover:text-gray-900  text-center border-2 rounded-lg uppercase font-bold text-xl">Click Here</button>
+                    <p className="px-4 text-center">To know about greenlisted, conservation-compliant resorts and homestays</p>
+                    <button className="mt-4 px-3 py-2 hover:bg-orange-500 hover:text-gray-900 text-center border-2 rounded-lg uppercase font-bold text-xl">Click Here</button>
                   </span>
                 </div>
               </div>

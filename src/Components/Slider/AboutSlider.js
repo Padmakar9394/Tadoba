@@ -72,16 +72,18 @@ const AboutSlider = () => {
       </Slider>
 
         {isViewerOpen && (
-          <ImageViewer
-            src={images}
-            currentIndex={currentImage}
-            onClose={closeImageViewer}
-            disableScroll={false}
-            backgroundStyle={{
-              backgroundColor: "rgba(0,0,0,0.9)"
-            }}
-            closeOnClickOutside={true}
-          />
+            <ImageViewer
+              src={images}
+              currentIndex={currentImage}
+              onClose={closeImageViewer}
+              disableScroll={false}
+              backgroundStyle={{
+                backgroundColor: "rgba(0,0,0,0.9)",
+                zIndex: 50
+              }}
+              closeOnClickOutside={true}
+
+            />
         )}
       </div>
     )
