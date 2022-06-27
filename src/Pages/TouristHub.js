@@ -135,7 +135,7 @@ const TouristHub = () => {
                           className="absolute w-full h-full object-cover"
                   />
                   <span className="absolute"></span>
-                  <span className="relative  hover:bg-black h-full w-full text-white py-8 px-4 flex flex-col items-center gap-3 transform transition duration-700 hover:scale-105">
+                  <span className="relative hover:bg-black h-full w-full text-white py-8 px-4 flex flex-col items-center gap-3 transform transition duration-700 hover:scale-105">
                     <h2 className="font-bold text-xl">WILDLIFE SAFARIS</h2>
                     <p className="px-4 text-center">To know about safari bookings, timings, fees, rules and regulations, refunds and cancellations etc</p>
                     <button className="mt-4 px-3 py-2 hover:bg-orange-500 hover:text-gray-900 text-center border-2 rounded-lg uppercase font-bold text-xl">Click Here</button>
