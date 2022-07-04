@@ -1,4 +1,7 @@
 import React from "react";
+import Tilt from 'react-tilt';
+
+//components
 import HomeSlider from "./HomeSlider";
 import PartnerSlider from "./partnersSlider";
 
@@ -68,6 +71,30 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <section className="relative my-8">
+            <div class="w-full h-screen overflow-hidden">
+              <img src="https://mytadoba.org/wp-content/uploads/2022/03/home-back-e1647142885408.jpg"
+                   alt="TATR-bg"
+                   className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="absolute top-24 px-32">
+              <h1 className="text-white text-center font-bold text-2xl">ABOUT TATR</h1>
+              <div className="flex items-center gap-16 mt-8">
+                <div className="w-1/2 text-white">
+                  <p className="font-['Roboto_Slab']">Located in the Chandrapur district of Maharashtra, the Tadoba-Andhari Tiger Reserve is one of India’s preeminent reserves. Its tropical dry deciduous forest ecosystem harbours at least 80 tigers, and there are over 200 tigers in the larger landscape. This is known to be the fastest-growing tiger population in the country. Tadoba also supports several other carnivore species, including the leopard and dhole, with the sambar, chital, wild pig and gaur being the most common prey species.</p>
+                  <p className="mt-2 font-['Roboto_Slab']">Know more about Tadoba’s history and biodiversity, and the sustained conservation efforts over the decades that have led to the revival of tigers and other wildlife here.</p>
+                  <button className="bg-amber-400 hover:bg-amber-600 text-xl hover:text-white mt-6 font-bold uppercase px-6 py-3 rounded-lg transition delay-300 hover:-translate-y-1 hover:scale-110 duration-150 ease-in-out">Learn More</button>
+                </div>
+                <div className="h-[370px]">
+                  <img src="https://mytadoba.org/wp-content/uploads/2022/02/home-section2-image.png"
+                       alt="TATR-image"
+                       className=" w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
           <section className="relative">
             <img src="https://mytadoba.org/wp-content/uploads/2022/02/home-back-3.jpg"
                  alt="section-bg-image"
@@ -77,26 +104,29 @@ const Home = () => {
               <h1 className="uppercase text-2xl font-bold text-center pt-32 pb-4">BE ENCHANTED</h1>
               <div className="px-4 flex">
                 <div className="w-1/2 px-20">
-                  <span className="h-64 safariImg">
+                  <Tilt className="Tilt h-72" >
                     <img src="https://mytadoba.org/wp-content/uploads/2022/02/home-section3-image.png"
                          alt="flex-image"
-                         className="w-full h-full object-cover"
+                         className="h-full object-cover"
                     />
-                  </span>
+                  </Tilt>
                 </div>
                 <div className="w-1/2 text-md pr-12 py-6">
                   <p className="font-['Roboto_Slab']">Experience Tadoba’s dazzling biodiversity – from our famous tigers to our beautiful butterflies. <span className="font-semibold">Book a safari</span> into the wild heart of the jungle. Also get in touch with your own wild side with <span className="font-semibold">rappelling, zip-lining and zorbing</span>  at the Agarzari Adventure Camp. Take a boat ride on the stunning Irai backwaters. Go kayaking on Moharli lake. Stay at a log hut, or
                   <span className="font-semibold"> spend the night on a machaan</span> if you dare! Whether you’re seeking an adrenaline rush or a calming immersion in the lap of Nature, we’ve got something your speed.</p>
                   <h2 className=" font-['Roboto_Slab'] my-1">Where to stay, what to do – <span className="font-semibold">all the information you need</span>, right here.</h2>
-                  <button className="bg-amber-400 hover:bg-amber-700 hover:text-white my-2 font-bold uppercase px-6 py-3 rounded-lg transition delay-300 hover:-translate-y-1 hover:scale-110 duration-150 ease-in-out">plan your visit</button>
+                  <button className="bg-amber-400 hover:bg-amber-600 text-xl hover:text-white mt-6 font-bold uppercase px-6 py-3 rounded-lg transition delay-300 hover:-translate-y-1 hover:scale-110 duration-150 ease-in-out">plan your visit</button>
                 </div>
               </div>
             </div>
           </section>
-          <div className="container px-32 my-28">
-            <h1 className="text-center text-lg text-green-700 uppercase text-2xl font-bold mb-8">Our Partners</h1>
-            <PartnerSlider />
-          </div>
+          <section className="relative">
+            <h1 className="text-center text-green-700 uppercase text-2xl font-bold mt-36 mb-8">Our Partners</h1>
+            <div className="container px-32">
+              <PartnerSlider />
+            </div>
+          </section>
+
         </div>
       </div>
     </>

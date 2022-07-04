@@ -5,8 +5,8 @@ import {PrevArrow, NextArrow} from "../../settings/Arrows";
 const EntertainmentCard = (props) => {
   return (
     <>
-      <div className="relative h-48">
-            <div className="absolute h-40 top-4 left-20">
+      <div className="relative h-56">
+            <div className="absolute h-44 top-4 left-20">
               <img
                 className="w-full h-full object-cover"
                 src={props.src}
@@ -32,11 +32,12 @@ const PartnerSlider = () => {
   ];
 
   const settings = {
-    autoplay: false,
     arrows: true,
+    infinite: true,
+    autoplay: true,
+    speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    InitialSlide: 0,
     prevArrow: <PrevArrow />,
     nextArrow : <NextArrow />,
     responsive: [
@@ -66,11 +67,13 @@ const PartnerSlider = () => {
 
   return (
     <>
+    <div className="">
       <Slider {...settings}>
         {images.map((image) => (
           <EntertainmentCard src={image} />
         ))}
       </Slider>
+    </div>
     </>
   );
 };
