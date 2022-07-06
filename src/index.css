@@ -36,11 +36,3 @@
   width: inherit;
   height: inherit;
 }
-
-.safariImg {
-  --scale:1.10064;
-  --translateX:0.801688px;
-  --translateY:0.718563px;
-  --rotateX:-1.25749deg;
-  --rotateY:1.40295deg;
-}

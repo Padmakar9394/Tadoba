@@ -8,7 +8,7 @@ const NavLg = () => {
   return (
     <>
       <section className="fixed w-full z-50 top-0 bg-[#2B7444]">
-      <div className="flex items-center mx-24">
+      <div className="flex items-center px-24">
         <div className="flex items-center gap-2">
           <div className="h-28">
             <img src="https://cracku.in/latest-govt-jobs/wp-content/uploads/2019/08/Maharashtra-Forest-Department-Logo.jpg"
@@ -31,7 +31,7 @@ const NavLg = () => {
             </div>
           </NavLink>
           <NavLink to="/tourist-hub">
-            <div className="flex items-center max-2 text-white hover:text-yellow-400">
+            <div className="flex items-center text-white hover:text-yellow-400">
               <h2 className="text-sm font-semibold uppercase mx-2">Tourist Hub</h2>
               <span className="text-sm"><AiFillCaretDown /></span>
             </div>

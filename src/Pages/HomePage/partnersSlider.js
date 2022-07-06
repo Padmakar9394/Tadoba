@@ -8,8 +8,8 @@ const EntertainmentCard = (props) => {
       <div className="relative h-56">
             <div className="absolute h-44 top-4 left-20">
               <img
-                className="w-full h-full object-cover"
                 src={props.src}
+                className="h-full"
                 alt="entertainment image"
               />
             </div>
@@ -44,30 +44,22 @@ const PartnerSlider = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 2,
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow:3,
-          slidesToScroll: 2,
-        }
-      },
-      {
-        breakpoint: 400,
-        settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
         }
       },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
     ]
   };
-
   return (
     <>
-    <div className="">
+    <div>
       <Slider {...settings}>
         {images.map((image) => (
           <EntertainmentCard src={image} />

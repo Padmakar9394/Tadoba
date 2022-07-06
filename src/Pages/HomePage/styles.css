@@ -51,9 +51,9 @@
   }
     .one
     {
-        -webkit-animation-delay: 1.7;
-        -moz-animation-delay: 1.7;
-        animation-delay: 1.7;
+        -webkit-animation-delay: 1.7s;
+        -moz-animation-delay: 1.7s;
+        animation-delay: 1.7s;
     }
 
     .two

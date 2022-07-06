@@ -45,7 +45,7 @@ const HomeSlider = () =>  {
         <SwiperSlide>
           <div class="swiper-slide">
             <div class="slide4 swiper-slide-cover"></div>
-              <div class="one animate fadeUp text1 w-5/12 left-16 mb-16">
+              <div class="one animate fadeUp text1 w-2/5 left-16 mb-16">
                   <h2 className="text-4xl font-bold uppercase">Plan the smallest details of your jungle adventure</h2>
                   <button className="bg-amber-400 text-lg text-black font-semibold uppercase px-6 py-2 rounded-lg mt-4">Click here!</button>
               </div>
