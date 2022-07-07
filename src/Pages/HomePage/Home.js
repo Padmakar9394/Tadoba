@@ -23,25 +23,25 @@ const Home = () => {
                className="h-full object-cover"
           />
         </div>
-        <div className="absolute top-20">
-          <div className="hidden md:block" data-aos="fade-down"><HomeSlider /></div>
-          <div className="flex items-center gap-2 md:my-24 md:px-32" data-aos="fade-down">
+        <div className="absolute md:top-0">
+          <div className="" data-aos="fade-down"><HomeSlider /></div>
+          <div className="flex items-center gap-2 my-16 md:my-24 px-8 md:px-32" data-aos="fade-down">
             <div className="md:w-1/3 md:pl-8">
-              <section className="flex items-center md:gap-16 md:pl-4">
-                <div className="h-24">
+              <section className="flex items-center gap-8 md:gap-16 md:pl-4">
+                <div className="h-32 md:h-24">
                   <img src="https://mytadoba.org/wp-content/uploads/elementor/thumbs/FD-logo-pkak3l12n6s9crhbyu8i4o29t0p3lyndqcab8u2k1s.png"
                        alt="logo1"
-                       className="w-full h-full object-cover"
+                       className="h-full object-cover"
                   />
                 </div>
-                <div className="h-24">
+                <div className="h-32 md:h-24">
                   <img src="https://mytadoba.org/wp-content/uploads/elementor/thumbs/partners-maha-ecotourism-pmjh8tcz4wbyh3qoq378aykwoqj97hy6bfs383w0zk.png"
                        alt="logo2"
-                       className="w-full h-full object-cover"
+                       className="h-full object-cover"
                   />
                 </div>
               </section>
-              <h2 className="text-center mt-6 text-md font-extrabold font-['Roboto_Slab']">The official website of Tadoba-Andhari Tiger Reserve, Forest Department, Government of Maharashtra</h2>
+              <h2 className="text-center mt-6 text-lg md:text-md font-extrabold font-['Roboto_Slab']">The official website of Tadoba-Andhari Tiger Reserve, Forest Department, Government of Maharashtra</h2>
             </div>
             <div className="hidden md:flex w-2/3 items-center gap-6 font-['Roboto_Slab']">
               <div className="flex flex-col items-center text-sm text-[#252525]">
@@ -80,10 +80,12 @@ const Home = () => {
             </div>
           </div>
           <section className="relative my-4">
+            <div>
               <img src="https://mytadoba.org/wp-content/uploads/2022/03/home-back-e1647142885408.jpg"
                    alt="TATR-bg"
                    className="h-[1050px] md:h-screen object-cover"
               />
+            </div>
             <div className="absolute top-8 px-4 md:top-24 md:px-32">
               <h1 className="text-white text-center font-bold text-2xl">ABOUT TATR</h1>
               <div className="md:flex md:items-center md:gap-16 mt-4 md:mt-8">
@@ -104,30 +106,30 @@ const Home = () => {
           <section className="relative">
             <img src="https://mytadoba.org/wp-content/uploads/2022/02/home-back-3.jpg"
                  alt="section-bg-image"
-                 className="h-[700px] md:h-screen object-cover"
+                 className="h-[900px] md:h-screen object-cover"
             />
             <div className="absolute top-0 w-screen">
-              <h1 className="uppercase text-2xl font-bold text-center mt-8 md:mt-28" data-aos="fade-down">BE ENCHANTED</h1>
+              <h1 className="uppercase text-2xl font-bold text-center mt-12 md:mt-28" data-aos="fade-down">BE ENCHANTED</h1>
               <div className="flex flex-col md:flex-row md:px-20">
                 <div className="md:w-1/2 pl-12" data-aos="fade-right">
-                  <Tilt className="Tilt h-56 md:h-80">
+                  <Tilt className="Tilt h-56 md:h-80 mt-4 md:mt-0">
                     <img src="https://mytadoba.org/wp-content/uploads/2022/02/home-section3-image.png"
                          alt="flex-image"
                          className="h-full object-cover"
                     />
                   </Tilt>
                 </div>
-                <div className="flex flex-col md:w-1/2 text-md py-6" data-aos="fade-left">
+                <div className="flex flex-col md:w-1/2 text-md py-6 px-4 md:px-4 text-lg" data-aos="fade-left">
                   <p className="font-['Roboto_Slab']">Experience Tadoba’s dazzling biodiversity – from our famous tigers to our beautiful butterflies. <span className="font-semibold">Book a safari</span> into the wild heart of the jungle. Also get in touch with your own wild side with <span className="font-semibold">rappelling, zip-lining and zorbing</span>  at the Agarzari Adventure Camp. Take a boat ride on the stunning Irai backwaters. Go kayaking on Moharli lake. Stay at a log hut, or
                   <span className="font-semibold"> spend the night on a machaan</span> if you dare! Whether you’re seeking an adrenaline rush or a calming immersion in the lap of Nature, we’ve got something your speed.</p>
                   <h2 className=" font-['Roboto_Slab'] my-1">Where to stay, what to do – <span className="font-semibold">all the information you need</span>, right here.</h2>
-                  <button className="bg-amber-400 hover:bg-amber-600 text-xl hover:text-white mt-6 font-bold uppercase px-6 py-3 rounded-lg transition delay-300 hover:-translate-y-1 hover:scale-110 duration-150 ease-in-out">plan your visit</button>
+                  <button className="w-2/3 bg-amber-400 hover:bg-amber-600 text-xl hover:text-white mt-6 font-bold uppercase px-6 py-3 rounded-lg transition delay-300 hover:-translate-y-1 hover:scale-110 duration-150 ease-in-out">plan your visit</button>
                 </div>
               </div>
             </div>
           </section>
           <section className="w-screen" data-aos="fade-up">
-            <h1 className="text-center text-green-700 uppercase text-2xl font-bold mt-12 mb-8">Our Partners</h1>
+            <h1 className="text-center text-green-700 uppercase text-2xl font-bold my-4 md:mt-12 md:mb-8">Our Partners</h1>
             <div className="md:container md:px-32">
               <PartnerSlider />
             </div>

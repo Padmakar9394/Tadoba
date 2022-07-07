@@ -6,7 +6,7 @@ const EntertainmentCard = (props) => {
   return (
     <>
       <div className="relative h-56">
-            <div className="absolute h-44 top-4 left-20">
+            <div className="absolute h-44 top-4 md:left-20 left-24">
               <img
                 src={props.src}
                 className="h-full"

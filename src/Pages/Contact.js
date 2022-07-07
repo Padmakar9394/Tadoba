@@ -5,9 +5,17 @@ import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet'
 const Contact = () => {
   return (
     <>
-      <div className="md:mx-20 md:mt-44 px-6 md:px-0">
-        <h1 className="text-2xl uppercase font-bold mt-20 mb-8">Contact Us</h1>
-        <div className="md:flex md:justify-between md:items-center">
+      <div className="">
+        <div className="relative">
+          <div className="h-32 md:h-[250px]">
+            <img src="https://mytadoba.org/wp-content/uploads/2022/02/contactus-featured-image-768x121.jpg"
+                 alt="bg-img"
+                 className="h-full object-fill"
+            />
+          </div>
+          <h1 className="md:px-24 text-white text-lg md:text-2xl uppercase font-bold mt-16 absolute left-28 md:left-0 bottom-0">Contact Us</h1>
+        </div>
+        <div className="md:flex md:justify-between md:items-center px-6 md:px-0 mt-4 md:px-32">
           <div className="drop-shadow-xl bg-white py-3 px-4 rounded-lg">
             <h1 className="my-2 text-lg font-['Open_Sans'] font-medium">TADOBA-ANDHARI TIGER RESERVE</h1>
             <h3 className="font-medium my-1">Mul Road, Chandrapur – 442401</h3>
@@ -20,7 +28,7 @@ const Contact = () => {
               <h2 className="text-lg px-1 font-['Open_Sans']">WhatsApp Us</h2>
             </button>
           </div>
-          <aside style={{height : "fit-content"}} className="md:w-6/12 sticky bg-white p-3 shadow-md rounded-xl">
+          <aside style={{height : "fit-content"}} className="md:w-6/12 sticky bg-white p-3 shadow-md rounded-xl mt-4 md:mt-0">
               <h1 className="text-lg font-bold font-medium">TADOBA-ANDHARI TIGER RESERVE</h1>
               <h5 className="font-semibold">Map</h5>
               <div className="w-full h-72">
@@ -38,10 +46,10 @@ const Contact = () => {
               </div>
           </aside>
         </div>
-        <div className="mt-16">
+        <div className="px-6 md:px-32 mt-16 ">
           <hr className="bg-cyan-500" />
         </div>
-        <form className="my-16 flex flex-col">
+        <form className="px-6 md:px-32 my-16 flex flex-col">
           <div className="md:flex md:items-center md:gap-12 md:my-4">
             <div className="flex flex-col gap-2 md:w-2/5">
               <label className="text-lg">First Name <span className="text-xl text-red-600">*</span></label>

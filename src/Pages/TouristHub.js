@@ -15,33 +15,39 @@ const TouristHub = () => {
             </div>
             <div className="absolute w-full">
               <div className="relative">
-                <div className="w-full h-[250px]">
+                <div className="w-full h-32 md:h-[250px]">
                   <img src="https://mytadoba.org/wp-content/uploads/2022/02/about-featured-image.jpg"
                        className="w-full h-full object-fill"
                        alt="bg-img"
                   />
                 </div>
-                <h1 className="md:px-24 text-white text-center md:text-start text-2xl uppercase font-bold mt-16 absolute left-0 bottom-0">Plan your visit</h1>
+                <h1 className="md:px-24 text-white text-lg md:text-2xl uppercase font-bold mt-16 absolute left-28 md:left-0 bottom-0">Plan your visit</h1>
               </div>
             </div>
-            <div className="absolute top-64 w-full">
-              <div className="relative  my-16  transform transition duration-700 hover:scale-105">
-              <div className="relative w-full h-[450px]">
-                <img src="https://images.unsplash.com/photo-1445711005973-54fe2a103826?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NjR8ODk3NjkxOXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
+            <div className="absolute top-28 md:top-64 w-full">
+              <div className="relative my-16">
+              <div className="hidden md:block relative w-full h-[700px] md:h-[450px]">
+                <img src="https://mytadoba.org/wp-content/uploads/2022/03/tourist-info-back.jpg"
                      className="w-full h-full object-cover"
                      alt="bg-img"
                 />
               </div>
-              <span className="absolute top-0 px-32 text-white">
-                <div className="flex items-center gap-12 px-4 pt-20">
-                  <div className="flex flex-col gap-4 w-1/2">
-                    <h1 className="font-bold text-xl">GETTING TO TATR</h1>
+              <div className="md:hidden relative w-full h-[700px] md:h-[450px]">
+                <img src="https://mytadoba.org/wp-content/uploads/2022/03/tourist-info-back-mobile.jpg"
+                     className="w-full h-full object-cover"
+                     alt="bg-img"
+                />
+              </div>
+              <span className="absolute top-0 px-4 md:px-32 text-white">
+                <div className="md:flex md:items-center md:gap-12 md:px-4 pt-4 md:pt-16">
+                  <div className="flex flex-col gap-4 md:w-1/2">
+                    <h1 className="font-bold text-lg md:text-xl">GETTING TO TATR</h1>
                     <h3>There are several ways to reach Tadoba, which is among the best connected tiger reserves in India.</h3>
                     <p><span className="font-bold">DRIVING</span>: Nagpur is the closest large city and is just about 100km from the Kolara Gate and 150km from the Moharli Gate. Good highways connect Tadoba to Nagpur, Hyderabad, Amravati and Yevatmal. Tourists even drive in from as far afield as Pune, Bangalore, Kolkata and Mumbai!</p>
                     <h3><span className="font-bold">RAILWAYS</span>: The nearby Railway Stations are Chandrapur, Wardha and Nagpur.</h3>
                     <h3><span className="font-bold">AIRPORT</span>: Nagpur’s Dr. Babasaheb Ambedkar Airport, which has good connections to major Indian cities, is the nearest airport.</h3>
                   </div>
-                  <div className="w-[500px] rounded-2xl p-2">
+                  <div className="md:w-[500px] py-2 md:p-2">
                       <Disclosure>
                         {({ open }) => (
                           <>
@@ -127,40 +133,40 @@ const TouristHub = () => {
               </span>
               </div>
             </div>
-            <div className="absolute top-96 mt-96 w-full px-28">
-              <div className="flex items-center gap-4 mt-20">
-                <div className="relative w-[400px] h-64 my-8">
+            <div className="absolute top-[850px] md:top-96 md:mt-96 w-full px-2 md:px-28">
+              <div className="md:flex md:items-center md:gap-4 mt-20">
+                <div className="relative md:w-[400px] h-72 my-4 md:my-8">
                   <img src="https://mytadoba.org/wp-content/uploads/2022/02/tourist-safari-calltoaction.jpg"
                           alt="bg-card-img"
                           className="absolute w-full h-full object-cover"
                   />
                   <span className="absolute"></span>
-                  <span className="relative hover:bg-black h-full w-full text-white py-8 px-4 flex flex-col items-center gap-3 transform transition duration-700 hover:scale-105">
+                  <span className="relative hover:bg-black h-full w-full text-white py-8 md:px-4 flex flex-col items-center gap-3 transform transition duration-700 hover:scale-105">
                     <h2 className="font-bold text-xl">WILDLIFE SAFARIS</h2>
-                    <p className="px-4 text-center">To know about safari bookings, timings, fees, rules and regulations, refunds and cancellations etc</p>
+                    <p className="px-2 text-lg md:px-3 text-center">To know about safari bookings, timings, fees, rules and regulations, refunds and cancellations etc</p>
                     <button className="mt-4 px-3 py-2 hover:bg-orange-500 hover:text-gray-900 text-center border-2 rounded-lg uppercase font-bold text-xl">Click Here</button>
                   </span>
                 </div>
-                <div className="relative w-[400px] h-64 my-8">
+                <div className="relative md:w-[400px] h-72 my-4 md:my-8">
                   <img src="https://mytadoba.org/wp-content/uploads/2022/02/tourist-activities-calltoaction.jpg"
                           alt="bg-card-img"
                           className="absolute w-full h-full object-cover"
                   />
                   <span className="absolute"></span>
-                  <span className="relative hover:bg-black h-full w-full text-white py-8 px-4 flex flex-col items-center gap-3 transform transition duration-700 hover:scale-105">
+                  <span className="relative hover:bg-black h-full w-full text-white py-8 md:px-4 flex flex-col items-center gap-3 transform transition duration-700 hover:scale-105">
                     <h2 className="font-bold text-xl">OTHER ADVENTURES</h2>
-                    <p className="px-4 text-center">To know about booking other activities such as boating, kayaking, birding machans, cycling etc</p>
-                    <button className="mt-4 px-3 py-2 hover:bg-orange-500 hover:text-gray-900  text-center border-2 rounded-lg uppercase font-bold text-xl">Click Here</button>
+                    <p className="px-2 text-lg md:px-3 text-center">To know about booking other activities such as boating, kayaking, birding machans, cycling etc</p>
+                    <button className="mt-4 px-3 py-2 hover:bg-orange-500 hover:text-gray-900 text-center border-2 rounded-lg uppercase font-bold text-xl">Click Here</button>
                   </span>
                 </div>
-                <div className="relative w-[400px] h-64 my-8">
+                <div className="relative md:w-[400px] h-72 my-4 md:my-8">
                   <img src="https://mytadoba.org/wp-content/uploads/2022/02/tourist-resorts-calltoaction.jpg"
                           alt="bg-card-img"
                           className="absolute w-full h-full object-cover"
                   />
-                  <span className="relative hover:bg-black h-full w-full text-white py-8 px-4 flex flex-col items-center gap-3 transform transition duration-700 hover:scale-105">
+                  <span className="relative hover:bg-black h-full w-full text-white py-8 md:px-4 flex flex-col items-center gap-3 transform transition duration-700 hover:scale-105">
                     <h2 className="font-bold text-xl">RESORTS / HOMESTAYS</h2>
-                    <p className="px-4 text-center">To know about greenlisted, conservation-compliant resorts and homestays</p>
+                    <p className="px-2 text-lg md:px-3 text-center">To know about greenlisted, conservation-compliant resorts and homestays</p>
                     <button className="mt-4 px-3 py-2 hover:bg-orange-500 hover:text-gray-900 text-center border-2 rounded-lg uppercase font-bold text-xl">Click Here</button>
                   </span>
                 </div>

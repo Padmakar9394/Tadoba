@@ -9,9 +9,17 @@ import WildLifeGallerySliderInscets from "../Components/Slider/WildLifeGallerySl
 const About = () => {
   return (
     <>
-      <div className="px-2 md:px-16 md:mt-44">
-        <h1 className="text-center md:text-start text-2xl uppercase font-bold mt-16">About Us</h1>
-        <div className="px-4 md:px-8 flex flex-col items-start md:flex-row md:items-center md:gap-20 font-['Roboto_Slab'] my-12">
+      <div className="">
+        <div className="relative">
+          <div className="h-32 md:h-[250px]">
+            <img src="https://mytadoba.org/wp-content/uploads/2022/03/aboutus-featured-image.jpg"
+                 alt="bg-img"
+                 className="h-full object-fill"
+            />
+          </div>
+          <h1 className="md:px-24 text-white text-lg md:text-2xl uppercase font-bold mt-16 absolute left-28 md:left-0 bottom-0">Contact Us</h1>
+        </div>
+        <div className="px-4 md:px-32 flex flex-col items-start md:flex-row md:items-center md:gap-20 font-['Roboto_Slab'] my-12">
             <p className="block font-['Roboto_Slab'] text-lg leading-7">
               <span className=""><span className="inline-block align-text-top text-[#8ac5d7] text-6xl leading-8">
               T</span></span>
@@ -34,7 +42,7 @@ const About = () => {
               Tigers generate the most interest and occupy the top position in the food web but it is the forest in its entirety, all creatures great and small, that make this tiger reserve tick. Tadoba’s enchantment is in the southern tropical dry deciduous jungle with its myriad grasslands and waterbodies. It is in the groves of bamboo, a keystone plant in this landscape that supplements food availability for herbivores, keeps invasive weeds at bay, and serves as both safe harbour and ambush cover for different species. It is in the stunning variety of insect life and bird life. It is in the azure dartlets and the harvestmen, the lesser adjutant storks and the oriental magpie-robins, the Tickell’s blue flycatchers and the Indian silverbills. It is in the prey species, the wild pigs and sambar and chital, and in the predators, the jungle cats and wild dogs, the leopards and the mugger crocodiles, and the mighty tigers.<br/><br />On behalf of my team, I welcome you to enjoy the variety that Tadoba-Andhari Tiger Reserve offers. Immerse yourself in this magical landscape, allow yourself to be enchanted by it. And remember that people have laid down their lives to protect it. Respect it, for it is your natural heritage.<br /><br />
               <span className="font-semibold">Dr Jitendra Ramgaokar <br />Field Director, Tadoba-Andhari Tiger Reserve</span>
             </p>
-          <p className="my-4 md:my-0 font-['Roboto_Slab'] text-3xl text-[#8ac5d7] md:text-center md:px-20">
+          <p className="my-4 md:my-0 font-['Roboto_Slab'] text-3xl text-[#8ac5d7] text-center md:px-20">
               Today, Tadoba-Andhari Tiger Reserve is regarded as one of the world’s most preferred tiger destinations, a glittering jewel in the Project Tiger crown.
           </p>
         </div>
