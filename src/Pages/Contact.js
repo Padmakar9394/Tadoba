@@ -15,7 +15,7 @@ const Contact = () => {
           </div>
           <h1 className="md:px-24 text-white text-lg md:text-2xl uppercase font-bold mt-16 absolute left-28 md:left-0 bottom-0">Contact Us</h1>
         </div>
-        <div className="md:flex md:justify-between md:items-center px-6 md:px-0 mt-4 md:px-32">
+        <div className="md:flex md:justify-between md:items-center px-6 mt-4 md:mt-8 md:px-32">
           <div className="drop-shadow-xl bg-white py-3 px-4 rounded-lg">
             <h1 className="my-2 text-lg font-['Open_Sans'] font-medium">TADOBA-ANDHARI TIGER RESERVE</h1>
             <h3 className="font-medium my-1">Mul Road, Chandrapur – 442401</h3>
