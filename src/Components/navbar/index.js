@@ -104,7 +104,7 @@ const NavSm = () => {
     }
   return (
     <>
-      <nav className="fixed w-full z-50 top-0 bg-[#2B7444]">
+      <nav className="fixed w-screen z-50 top-0 bg-[#2B7444]">
       <div className="flex items-center justify-between px-1 py-2">
           <div className="flex items-center">
             <div className="w-8 h-12">

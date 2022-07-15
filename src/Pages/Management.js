@@ -24,38 +24,38 @@ const Management = () => {
               </div>
               <h1 className="md:px-24 text-white text-lg md:text-2xl uppercase font-bold mt-16 absolute left-28 md:left-0 bottom-0">TATR MANAGEMENT</h1>
             </div>
-            <div className="md:px-32 my-8 w-screen">
-              <h1 className="text-center text-lg md:text-xl font-bold">MANAGEMENT STRUCTURE</h1>
+            <div className="md:px-32 w-screen">
+              <h1 className="text-center text-lg md:text-xl font-bold my-8">MANAGEMENT STRUCTURE</h1>
               <div className="h-84 w-screen md:h-[600px] md:px-16 md:mt-8">
                 <img src="https://mytadoba.org/wp-content/uploads/2022/03/organisational-chart.png"
                      className="h-full object-cover"
                      alt="bg-img"
                 />
               </div>
-              <h1 className="text-center text-xl font-bold uppercase">Contact Information</h1>
+              <h1 className="hidden md:block text-center text-xl font-bold uppercase my-8">Contact Information</h1>
 
-              <div className="fle flex-col mt-8 font-['Roboto_Slab']">
+              <div className="hidden md:flex md:flex-col font-['Roboto_Slab'] md:my-8">
                 <div className="flex flex-col md:flex-row">
-                  <button className={toggleState === 1 ? "px-4 py-5 cursor-pointer font-bold text-[#e67817] text-center md:w-[50%] outline-none bg-white border border-[#e67817] md:border-b-transparent border-solid" : "px-4 py-5 border md:border-b border-[#e67817] border-solid cursor-pointer font-bold text-[#875B3E] text-center md:w-[50%] outline-none"}
+                  <button className={toggleState === 1 ? "px-4 py-5 cursor-pointer font-bold text-[#e67817] text-center md:w-[50%] outline-none bg-white border border-[#e67817] md:border-b-transparent border-solid" : "px-4 py-5 md:border-b border-[#e67817] border-solid cursor-pointer font-bold text-[#875B3E] text-center md:w-[50%] outline-none"}
                           onClick={() => toggleTab(1)}>
                     Office of the Conservator of Forests & Field Director</button>
-                  <button className={toggleState === 2 ? "px-4 py-5 cursor-pointer font-bold text-[#e67817] text-center md:w-[50%] outline-none bg-white border border-[#e67817] md:border-b-transparent border-solid" : "px-4 py-5 border md:border-b border-[#e67817] border-solid cursor-pointer font-bold text-[#875B3E] text-center md:w-[50%] outline-none"}
+                  <button className={toggleState === 2 ? "px-4 py-5 cursor-pointer font-bold text-[#e67817] text-center md:w-[50%] outline-none bg-white border border-[#e67817] md:border-b-transparent border-solid" : "px-4 py-5 md:border-b border-[#e67817] border-solid cursor-pointer font-bold text-[#875B3E] text-center md:w-[50%] outline-none"}
                           onClick={() => toggleTab(2)}>
                     Office of the Dy. Director (Buffer)</button>
-                  <button className={toggleState === 3 ? "px-4 py-5 cursor-pointer font-bold text-[#e67817] text-center md:w-[50%] outline-none bg-white border border-[#e67817] md:border-b-transparent border-solid" : "px-4 py-5 border md:border-b border-[#e67817] border-solid cursor-pointer font-bold text-[#875B3E] text-center md:w-[50%] outline-none"}
+                  <button className={toggleState === 3 ? "px-4 py-5 cursor-pointer font-bold text-[#e67817] text-center md:w-[50%] outline-none bg-white border border-[#e67817] md:border-b-transparent border-solid" : "px-4 py-5 md:border-b border-[#e67817] border-solid cursor-pointer font-bold text-[#875B3E] text-center md:w-[50%] outline-none"}
                           onClick={() => toggleTab(3)}>
                     Office of the Dy. Director (Core)</button>
-                  <button className={toggleState === 4 ? "px-4 py-5 cursor-pointer font-bold text-[#e67817] text-center md:w-[50%] outline-none bg-white border border-[#e67817] md:border-b-transparent border-solid" : "px-4 py-5 border md:border-b border-[#e67817] border-solid cursor-pointer font-bold text-[#875B3E] text-center md:w-[50%] outline-none"}
+                  <button className={toggleState === 4 ? "px-4 py-5 cursor-pointer font-bold text-[#e67817] text-center md:w-[50%] outline-none bg-white border border-[#e67817] md:border-b-transparent border-solid" : "px-4 py-5 md:border-b border-[#e67817] border-solid cursor-pointer font-bold text-[#875B3E] text-center md:w-[50%] outline-none"}
                           onClick={() => toggleTab(4)}>
                     Office of the Asst. Conservator of Forests (STPF)</button>
-                  <button className={toggleState === 5 ? "px-4 py-5 cursor-pointer font-bold text-[#e67817] text-center md:w-[50%] outline-none bg-white border border-[#e67817] md:border-b-transparent border-solid" : "px-4 py-5 border md:border-b border-[#e67817] border-solid cursor-pointer font-bold text-[#875B3E] text-center md:w-[50%] outline-none"}
+                  <button className={toggleState === 5 ? "px-4 py-5 cursor-pointer font-bold text-[#e67817] text-center md:w-[50%] outline-none bg-white border border-[#e67817] md:border-b-transparent border-solid" : "px-4 py-5 md:border-b border-[#e67817] border-solid cursor-pointer font-bold text-[#875B3E] text-center md:w-[50%] outline-none"}
                           onClick={() => toggleTab(5)}>
                     Office of the Subdivisional Officer (WL), Allapalli</button>
                 </div>
 
-                <div className="w-screen">
-                  <div className={toggleState === 1 ? "display-block px-4 border border-[#e67817] md:border-t-transparent" : "bg-white hidden"}>
-                    <table class="table-auto w-screen my-8">
+                <div className="">
+                  <div className={toggleState === 1 ? "block px-4 border border-[#e67817] border-t-transparent" : "bg-white hidden"}>
+                    <table class="table-auto my-8">
                       <thead>
                         <tr className="bg-[#8ac5d7]">
                           <th className="text-start px-2 py-2">Officer</th>
@@ -80,8 +80,8 @@ const Management = () => {
                       </tbody>
                     </table>
                   </div>
-                  <div className={toggleState === 2 ? "display-block px-4 border border-[#e67817] md:border-t-transparent" : "bg-white hidden"}>
-                    <table class="table-auto w-screen my-8">
+                  <div className={toggleState === 2 ? "block px-4 border border-[#e67817] border-t-transparent" : "bg-white hidden"}>
+                    <table class="table-auto my-8">
                       <thead>
                         <tr className="bg-[#8ac5d7]">
                           <th className="text-start px-2 py-2">Officer</th>
@@ -154,8 +154,8 @@ const Management = () => {
                       </tbody>
                     </table>
                   </div>
-                  <div className={toggleState === 3 ? "display-block px-4 border border-[#e67817] md:border-t-transparent" : "bg-white hidden"}>
-                    <table class="table-auto w-screen my-8">
+                  <div className={toggleState === 3 ? "block px-4 border border-[#e67817] border-t-transparent" : "bg-white hidden"}>
+                    <table class="table-auto my-8">
                       <thead>
                         <tr className="bg-[#8ac5d7]">
                           <th className="text-start px-2 py-2">Officer</th>
@@ -216,8 +216,8 @@ const Management = () => {
                       </tbody>
                     </table>
                   </div>
-                  <div className={toggleState === 4 ? "display-block px-4 border border-[#e67817] md:border-t-transparent" : "bg-white hidden"}>
-                    <table class="table-auto w-screen my-8">
+                  <div className={toggleState === 4 ? "block px-4 border border-[#e67817] border-t-transparent" : "bg-white hidden"}>
+                    <table class="table-auto my-8">
                       <thead>
                         <tr className="bg-[#8ac5d7]">
                           <th className="text-start px-2 py-2">Officer</th>
@@ -254,8 +254,8 @@ const Management = () => {
                       </tbody>
                     </table>
                   </div>
-                  <div className={toggleState === 5 ? "display-block px-4 border border-[#e67817] md:border-t-transparent" : "bg-white hidden"}>
-                    <table class="table-auto w-screen my-8">
+                  <div className={toggleState === 5 ? "block px-4 border border-[#e67817] border-t-transparent" : "bg-white hidden"}>
+                    <table class="table-auto my-8">
                       <thead>
                         <tr className="bg-[#8ac5d7]">
                           <th className="text-start px-2 py-2">Officer</th>
@@ -265,12 +265,6 @@ const Management = () => {
                         </tr>
                       </thead>
                       <tbody>
-                        <tr className="border-b hover:bg-[#F3F3F3]">
-                          <td className="px-2 py-4">Shri N.S. Deogade (Add.)</td>
-                          <td className="px-2">Sub-Divisional Officer (W.L.) Allapalli</td>
-                          <td className="px-2 text-[#875B3E] hover:text-[#e67817]">07133-266471, +91-9518990636</td>
-                          <td className="px-2 text-[#875B3E] hover:text-[#e67817]">sdfowlalpli@gmail.com</td>
-                        </tr>
                         <tr className="bg-[#f9f9f9] border-b hover:bg-[#F3F3F3]">
                           <td className="px-2 py-4">Shri G.M. Landge</td>
                           <td className="px-2">Range Forest Officer, Choudampalli</td>
@@ -282,6 +276,12 @@ const Management = () => {
                           <td className="px-2">Range Forest Officer, Bhamragarh</td>
                           <td className="px-2 text-[#875B3E] hover:text-[#e67817]">+91-9420619152</td>
                           <td className="px-2 text-[#875B3E] hover:text-[#e67817]">rfowbhamragad@gmail.com</td>
+                        </tr>
+                        <tr className="border-b hover:bg-[#F3F3F3]">
+                          <td className="px-2 py-4">Dr. Jitendra Ramgaonkar, IFS</td>
+                          <td className="px-2">Conservator of Forests & Field Director, TATR</td>
+                          <td className="px-2 text-[#875B3E] hover:text-[#e67817]">07172-251414/277116, +91-9623085361</td>
+                          <td className="px-2 text-[#875B3E] hover:text-[#e67817]">ccffdtadoba2@mahaforest.govt.in, ccf_fdtatr@rediffmail.com</td>
                         </tr>
                       </tbody>
                     </table>

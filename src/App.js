@@ -12,6 +12,7 @@ import PageNotFound from "./Pages/Pagenotfound";
 import Donation from "./Pages/Donation";
 import Management from "./Pages/Management";
 import OtherAdventures from "./Pages/otherAdventures";
+import WildLifeSafari from "./Pages/wildlifeSafari";
 
 // Import css files
 import "slick-carousel/slick/slick.css";
@@ -34,6 +35,7 @@ function App() {
           <Route path="work-with-us" element={<WorkWithUs />}/>
           <Route path="donation" element={<Donation />}/>
           <Route path="management" element={<Management />}/>
+          <Route path="wildlife-safaris" element={<WildLifeSafari />}/>
           <Route path="other-adventures" element={<OtherAdventures />}/>
           <Route path="*" element={<PageNotFound />}/>
         </Routes>
