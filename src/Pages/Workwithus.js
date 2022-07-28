@@ -5,7 +5,7 @@ import {MdOutlineEmail} from "react-icons/md";
 const WorkWithUs = () => {
   return (
     <>
-      <div className="px-4 mt-16 md:px-28 md:mt-44">
+      <div className="">
         <div className="relative">
           <div className="w-full h-[400px] fixed">
             <img src="https://mytadoba.org/wp-content/uploads/2022/02/site-back.png"
@@ -14,8 +14,16 @@ const WorkWithUs = () => {
             />
           </div>
           <div className="absolute top-0">
-              <h1 className="text-center md:text-start text-2xl uppercase font-bold">Work with us</h1>
-              <div className="my-8 px-2">
+            <div className="relative">
+              <div className="w-full h-32 md:h-[230px]">
+                <img src="https://mytadoba.org/wp-content/uploads/2022/02/workwithus-featured-image.jpg"
+                     className="w-full h-full object-fill"
+                     alt="work-with-us"
+                />
+              </div>
+              <h1 className="md:px-24 text-white text-lg md:text-2xl uppercase font-bold mt-16 absolute left-28 md:left-0 bottom-0">WORK WITH US</h1>
+              </div>
+              <div className="my-8 px-4 md:px-32">
                 <div className="">
                   <div className="flex items-center gap-2">
                     <span className="w-11 h-11 rounded bg-blue-900 hover:opacity-90 hover:cursor-pointer"><BsFacebook className="text-xl ml-3 mt-3 text-white" /></span>
@@ -46,10 +54,10 @@ const WorkWithUs = () => {
                   </div>
                 </div>
               </div>
-              <div className="my-8">
+              <div className="my-8 px-4 md:px-32">
                 <hr className="bg-cyan-500" />
               </div>
-              <div className="flex flex-col items-start md:flex-row md:items-center mt-8">
+              <div className="flex flex-col items-start md:flex-row md:items-center mt-8 px-4 md:px-32">
                 <div className="md:w-3/5 font-['Roboto_Slab']">
                   <h1 className="text-[#875b3e] font-extrabold text-xl">MAKE A FILM ON FOREST GUARDS</h1>
                   <h4 className="text-[#ACACAC] my-1">Posted: December 29, 2021</h4>
@@ -62,7 +70,7 @@ const WorkWithUs = () => {
                   <h3 className="font-semibold my-3">Last date for applications: January 31, 2021.</h3>
                   <button className="px-4 py-3 mt-4 mb-12 rounded text-white text-lg bg-gradient-to-r from-green-400 to-orange-500">Know More</button>
                 </div>
-                <span className="md:w-2/5">
+                <span className="px-4 md:px-0 md:w-2/5">
                   <div className="w-[300px] h-64 md:ml-28">
                     <img src="https://mytadoba.org/wp-content/uploads/2021/12/workwithus-post-filmmaking.jpg"
                          className="w-full h-full object-fill"

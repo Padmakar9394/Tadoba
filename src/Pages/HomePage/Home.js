@@ -108,10 +108,10 @@ const Home = () => {
                  alt="section-bg-image"
                  className="h-[900px] md:h-screen object-cover"
             />
-            <div className="absolute top-0 w-screen">
-              <h1 className="uppercase text-2xl font-bold text-center mt-12 md:mt-28" data-aos="fade-down">BE ENCHANTED</h1>
-              <div className="flex flex-col md:flex-row md:px-20">
-                <div className="md:w-1/2 pl-12" data-aos="fade-right">
+            <div className="absolute top-0 w-screen md:w-full">
+              <h1 className="uppercase text-2xl font-bold text-center mt-12 md:mt-28">BE ENCHANTED</h1>
+              <div className="flex flex-col items-center md:flex-row md:px-20">
+                <div className="md:w-1/2" data-aos="fade-right">
                   <Tilt className="Tilt h-56 md:h-80 mt-4 md:mt-0">
                     <img src="https://mytadoba.org/wp-content/uploads/2022/02/home-section3-image.png"
                          alt="flex-image"
@@ -119,7 +119,7 @@ const Home = () => {
                     />
                   </Tilt>
                 </div>
-                <div className="flex flex-col md:w-1/2 text-md py-6 px-4 md:px-4 text-lg" data-aos="fade-left">
+                <div className="flex flex-col md:w-1/2 text-md py-6 px-4 text-lg" data-aos="fade-left">
                   <p className="font-['Roboto_Slab']">Experience Tadoba’s dazzling biodiversity – from our famous tigers to our beautiful butterflies. <span className="font-semibold">Book a safari</span> into the wild heart of the jungle. Also get in touch with your own wild side with <span className="font-semibold">rappelling, zip-lining and zorbing</span>  at the Agarzari Adventure Camp. Take a boat ride on the stunning Irai backwaters. Go kayaking on Moharli lake. Stay at a log hut, or
                   <span className="font-semibold"> spend the night on a machaan</span> if you dare! Whether you’re seeking an adrenaline rush or a calming immersion in the lap of Nature, we’ve got something your speed.</p>
                   <h2 className=" font-['Roboto_Slab'] my-1">Where to stay, what to do – <span className="font-semibold">all the information you need</span>, right here.</h2>
@@ -130,7 +130,7 @@ const Home = () => {
           </section>
           <section className="w-screen" data-aos="fade-up">
             <h1 className="text-center text-green-700 uppercase text-2xl font-bold my-4 md:mt-12 md:mb-8">Our Partners</h1>
-            <div className="md:container md:px-32">
+            <div className="md:px-32">
               <PartnerSlider />
             </div>
           </section>

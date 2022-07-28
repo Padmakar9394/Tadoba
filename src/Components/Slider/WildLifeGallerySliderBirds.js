@@ -62,14 +62,17 @@ const WildLifeGallerySliderBirds = () => {
         <span className="">
           <Slider {...settings}>
             {birds.map((src, index) => (
-              <div className="h-72">
+              <div className="relative h-72" onClick={() => openImageViewer(index)}>
                 <img
                   src={src}
-                  onClick={() => openImageViewer(index)}
                   key={index}
                   alt=""
-                  className="h-full"
+                  className="absolute h-72"
                 />
+                <div className="absolute inset-0 hover:bg-gray-900 hover:bg-opacity-50"/>
+                <div className="relative text-white">
+                  <h1 className="text-lg font-bold my-32 mx-28">Birds</h1>
+                </div>
               </div>
             ))}
           </Slider>

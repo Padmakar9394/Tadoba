@@ -42,9 +42,9 @@ const NavLg = () => {
           <NavLink to="/work-with-us">
               <h2 className="text-sm font-semibold uppercase mx-2 text-white hover:text-yellow-400">Work with Us</h2>
           </NavLink>
-          <NavLink to="/shop">
+          <a href="https://store.mytadoba.org/">
               <h2 className="text-sm font-semibold uppercase mx-2 text-white hover:text-yellow-400">Shop</h2>
-          </NavLink>
+          </a>
           <NavLink to="/donation">
               <div className="bg-orange-400 h-28 py-10">
                 <h2 className="text-sm hover:text-white font-semibold uppercase px-4">Make A Donation</h2>
@@ -84,9 +84,9 @@ const NavSm = () => {
            <NavLink to="/work-with-us" onClick={() => setShowMenu(false)}>
               <h2 className="text-sm font-semibold uppercase px-4 py-2">Work with us</h2>
            </NavLink>
-           <NavLink to="/shop" onClick={() => setShowMenu(false)}>
+           <a href="https://store.mytadoba.org/">
               <h2 className="text-sm font-semibold uppercase px-4 py-2">Shop</h2>
-           </NavLink>
+           </a>
            <NavLink to="/donation" onClick={() => setShowMenu(false)}>
               <h2 className="text-sm font-semibold uppercase px-4 py-2 bg-cyan-400 text-white">Make a donation</h2>
            </NavLink>
